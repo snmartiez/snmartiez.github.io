@@ -2,7 +2,6 @@
 layout: post
 title: "Express"
 date: 2024-10-19
-categories: [Express, Node.js, Desarrollo Web]
 ---
 
 ## Creando un servidor web básico con Express
