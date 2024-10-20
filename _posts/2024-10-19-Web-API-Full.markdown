@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Conceptos básicos - Desarrollar una Web API RESTFull"
+date: 2024-10-19
+categories: [Express, Node.js, Desarrollo Web]
+---
+
 ## Conceptos básicos - Desarrollar una Web API RESTFull
 
 ### Node.js
