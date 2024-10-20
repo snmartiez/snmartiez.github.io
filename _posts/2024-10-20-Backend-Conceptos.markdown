@@ -1,7 +1,7 @@
 ---
 title: "Conceptos básicos"
 ---
-![Descripción de la imagen](https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2F4085508%2Fcover_image%2Fretina_500x200%2Fcover-secure-rest-api-in-nodejs-301ca94d2556fe1455c9a3995215751f.png)
+![Descripción de la imagen](https://raw.githubusercontent.com/snmartiez/snmartiez.github.io/refs/heads/gh-pages/assets/images/node.png)
 
 
 ### Node.js:
