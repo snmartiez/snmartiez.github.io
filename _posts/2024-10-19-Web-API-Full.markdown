@@ -1,4 +1,4 @@
-## Conceptos básicos antes de iniciar a desarrollar una web API Full
+## Conceptos básicos - Desarrollar una Web API RESTFull
 
 ### Node.js
 Node.js es un entorno de ejecución de JavaScript que se ejecuta en el lado del servidor. Está basado en el motor V8 de Chrome, lo que le permite ejecutar código JavaScript fuera del navegador. Su principal ventaja es su arquitectura no bloqueante y orientada a eventos, lo que lo hace eficiente para manejar aplicaciones escalables y de alto rendimiento, como servidores web.
