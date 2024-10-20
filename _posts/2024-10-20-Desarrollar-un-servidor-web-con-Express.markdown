@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cómo crear un servidor web con Express"
+title: "Crear un servidor web con Express"
 date: 2024-10-19
 categories: [Express, Node.js, Desarrollo Web]
 ---
