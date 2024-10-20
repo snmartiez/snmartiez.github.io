@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Crear un servidor web con Express"
+title: "Express"
 date: 2024-10-19
 categories: [Express, Node.js, Desarrollo Web]
 ---
 
-## Crear un servidor web con Express
+## Creando un servidor web básico con Express
 
 En este tutorial, aprenderemos a crear un servidor web básico con **Express**, un popular framework de **Node.js**. Sigue estos pasos para comenzar tu propio proyecto.
 
@@ -13,7 +13,7 @@ En este tutorial, aprenderemos a crear un servidor web básico con **Express**, 
 
 Asegúrate de tener instalado lo siguiente en tu sistema:
 
-- **Node.js** (versión 12 o superior). Puedes descargarlo desde [nodejs.org](https://nodejs.org).
+- **Node.js** (versión 18 o superior). Puedes descargarlo desde [nodejs.org](https://nodejs.org).
 - **NPM** (viene con Node.js).
 
 Verifica si tienes ambos instalados ejecutando en la terminal:
