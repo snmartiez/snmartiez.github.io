@@ -5,7 +5,7 @@ date: 2024-10-19
 categories: [Express, Node.js, Desarrollo Web]
 ---
 
-## Cómo crear un servidor web con Express
+## Crear un servidor web con Express
 
 En este tutorial, aprenderemos a crear un servidor web básico con **Express**, un popular framework de **Node.js**. Sigue estos pasos para comenzar tu propio proyecto.
 
