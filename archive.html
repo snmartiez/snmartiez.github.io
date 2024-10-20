@@ -20,8 +20,8 @@ layout: default
         {% endif %}
     {% endunless %}
     <li><span class="post-date">
-        {% assign date_format = "%B-%d-%Y" %}
-        {{ post.date | date: date_format | capitalize }} </span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% assign date_format = "%d-%m-%Y" %}
+        {{ post.date | date: date_format }} </span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </div>
