@@ -31,6 +31,21 @@
 </div>
 {% endif %}
 
+<!-- Publicaciones newer_post -->
+{% if site.data.tops2.size > 0 %}
+<div class="sidebar well">
+    <h1>{{ trans.newer_post}}</h1>
+    <ul>
+        {% for top in site.data.tops2 %}
+            {% for post in site.posts %}
+                {% if post.url contains top.url %}
+                    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
 
 
 <!-- Publicaciones -->
