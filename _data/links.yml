@@ -1,2 +1,17 @@
 - url: "https://github.com/snmartiez"
   title: "GitHub" 
+  
+- url: "https://angular.dev/"
+  title: "Angular"
+  
+- url: "https://nodejs.org/"
+  title: "Node.js"
+  
+- url: "https://expressjs.com/es/"
+  title: "Express.js"
+
+- url: "https://material.angular.io/"
+  title: "material.angular"
+
+- url: "http://getbootstrap.com/"
+  title: "Bootstrap"
