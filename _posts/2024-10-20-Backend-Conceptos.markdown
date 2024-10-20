@@ -1,8 +1,8 @@
 ---
 title: "Conceptos básicos"
 ---
+![Descripción de la imagen](https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2F4085508%2Fcover_image%2Fretina_500x200%2Fcover-secure-rest-api-in-nodejs-301ca94d2556fe1455c9a3995215751f.png)
 
-![Descripción de la imagen](assets/images/node.png)
 
 ### Node.js:
 Node.js es un entorno de ejecución de JavaScript que se ejecuta en el lado del servidor. Está basado en el motor V8 de Chrome, lo que le permite ejecutar código JavaScript fuera del navegador. Su principal ventaja es su arquitectura no bloqueante y orientada a eventos, lo que lo hace eficiente para manejar aplicaciones escalables y de alto rendimiento, como servidores web.
