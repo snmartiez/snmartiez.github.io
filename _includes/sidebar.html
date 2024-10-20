@@ -15,6 +15,7 @@
     </div>
 </div>
 
+<!-- Publicaciones tops -->
 {% if site.data.tops.size > 0 %}
 <div class="sidebar well">
     <h1>{{ trans.top_posts }}</h1>
@@ -30,6 +31,10 @@
 </div>
 {% endif %}
 
+
+
+<!-- Publicaciones -->
+
 <div class="sidebar well">
     <h1>{{ trans.recent_posts }}</h1>
     <ul>
@@ -38,7 +43,7 @@
         {% endfor %}
     </ul>
 </div>
-
+<!-- Lista De link en el menu lateral -->
 <div class="sidebar well">
     {% include links-list.html %}
 </div>
