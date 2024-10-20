@@ -14,3 +14,9 @@ Sequelize es un ORM (Object-Relational Mapping) para Node.js que facilita la int
 
 ### API (Application Programming Interface)
 Una API es un conjunto de definiciones y protocolos que permiten que diferentes sistemas de software se comuniquen entre sí. Las APIs exponen funcionalidades o datos de una aplicación para que otras aplicaciones puedan interactuar con ellas sin necesidad de conocer los detalles internos del sistema. Una API actúa como un puente que permite la integración entre diferentes aplicaciones o servicios.
+
+### REST (Representational State Transfer)
+Es un estilo arquitectónico para diseñar APIs que aprovecha los métodos del protocolo HTTP para realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) sobre recursos. En REST, los recursos son identificados mediante URL, y las operaciones se realizan usando los métodos HTTP como GET, POST, PUT, DELETE, etc. Una API basada en REST es conocida como una API RESTful, y su objetivo es ser ligera, escalable y fácil de mantener.
+
+### Web API
+Es un tipo específico de API que se expone a través de la web utilizando el protocolo HTTP. Las Web APIs pueden estar diseñadas siguiendo el estilo REST o SOAP (otro protocolo para servicios web), pero en general, cuando hablamos de una Web API, nos referimos a una API que permite la interacción a través de solicitudes HTTP. Las Web APIs son muy comunes en aplicaciones modernas, ya que permiten que aplicaciones web y móviles se conecten a servidores para obtener o enviar datos.
