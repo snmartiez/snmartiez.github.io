@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "Conceptos básicos - Desarrollar una Web API RESTFull"
-date: 2024-10-19
 categories: [Express, Node.js, Desarrollo Web]
 ---
 
-## Conceptos básicos - Desarrollar una Web API RESTFull
+# Conceptos básicos - Desarrollar una Web API RESTFull
 
 ### Node.js
 Node.js es un entorno de ejecución de JavaScript que se ejecuta en el lado del servidor. Está basado en el motor V8 de Chrome, lo que le permite ejecutar código JavaScript fuera del navegador. Su principal ventaja es su arquitectura no bloqueante y orientada a eventos, lo que lo hace eficiente para manejar aplicaciones escalables y de alto rendimiento, como servidores web.
 
-### Express
+#### Express
 Express es un framework web minimalista para Node.js que facilita la creación de aplicaciones web y APIs. Express simplifica la gestión de rutas, la manipulación de solicitudes HTTP, y la gestión de middlewares, permitiendo a los desarrolladores crear servidores con menos código y más eficiencia.
 
 ### Nodemon
