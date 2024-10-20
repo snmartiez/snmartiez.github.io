@@ -17,7 +17,7 @@ date_format:
   categories: "%b-%Y"
   tag: "%b-%Y"
 # Language
-lan: "en" 
+lan: "es" 
 
 paginate: 10
 
