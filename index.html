@@ -4,23 +4,8 @@ layout: default
 {% assign trans = site.data.values[site.lan] %}
 {% for post in paginator.posts %}
 <div class="well article">
-
-    <span class="post-date">
-
-
-        
-        {% assign d = post.date | date: "%d" | plus:'0' %}
-        {{ post.date | date: "%B" }}
-        {% case d %}
-        {% when 1 or 21 or 31 %}{{ d }}st,
-        {% when 2 or 22 %}{{ d }}nd,
-        {% when 3 or 23 %}{{ d }}rd,
-        {% else %}{{ d }}th,
-        {% endcase %}
-        {{ post.date | date: "%Y" }}
-       
-
-        
+<h1>hola mundo</h1>
+    <span class="post-date">        
         {% assign date_format = site.date_format.title %}
         {{ post.date | date: date_format }}
     </span>
