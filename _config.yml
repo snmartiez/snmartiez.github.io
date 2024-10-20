@@ -12,7 +12,7 @@ url: https://github.com/snmartiez/snmartiez.github.io/
 baseurl: ''
 ## default date_format
 date_format: 
-  title: "%B-%-d-%Y"
+  title: "%d-%m-%Y"
   archive: "%b"
   categories: "%b-%Y"
   tag: "%b-%Y"
