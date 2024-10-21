@@ -8,8 +8,7 @@ date: 2024-10-21
 
 ### Introducción
 
-**Express** es un framework minimalista para **Node.js** que facilita la creación de aplicaciones web y APIs REST. 
-En esta guía, aprenderás cómo crear una API REST desde cero utilizando Express, con una estructura de carpetas organizada para proyectos de mayor escala.
+**Express** es un framework de Node.js que facilita la creación de servidores web y APIs RESTful. Nos permite gestionar rutas, middleware y controladores de manera eficiente y con una estructura limpia. En esta guía, aprenderás cómo configurar un servidor Express, cómo manejar rutas y controladores, y cómo estructurar tu proyecto en múltiples archivos.
 
 ### Requisitos previos
 
@@ -39,7 +38,7 @@ npm install express
 {% endhighlight %}
 
 ### Paso 3: Crea el archivo principal del servidor
-Crea un archivo llamado index.js en la raíz del proyecto. Aquí es donde configuraremos el servidor.
+Crea un archivo llamado index.js en la raíz de tu proyecto. Este archivo será el punto de entrada de nuestra API. Aquí es donde configuraremos el servidor con Express.
 
 {% highlight javascript %}
 // server.js
@@ -47,12 +46,11 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Middleware para parsear JSON
-app.use(express.json());
+app.use(express.json()); // Middleware para manejar JSON
 
 // Ruta principal
 app.get('/', (req, res) => {
-  res.send('¡Hola, mundo!');
+  res.send('¡Bienvenido a la API!');
 });
 
 // Iniciar el servidor
@@ -63,9 +61,49 @@ app.listen(PORT, () => {
 {% endhighlight %}
 
 ### Explicación:
-- express(): Crea una nueva aplicación Express.
-- app.use(express.json()): Middleware que permite manejar solicitudes con cuerpos en formato JSON.
-- app.get(): Define una ruta de tipo GET (más sobre tipos de rutas a continuación).
-- app.listen(): Inicia el servidor y escucha en el puerto especificado.
+- express(): Crea una instancia de Express.
+- app.use(express.json()): Middleware que permite que nuestra API maneje peticiones con cuerpos en formato JSON.
+- app.get('/', ...): Define una ruta GET en la raíz del servidor. Al acceder a esta ruta, responderá con "¡Bienvenido a la API!".
+- app.listen(PORT, ...): Inicia el servidor en el puerto 3000 y espera solicitudes.
   
 Para iniciar el servidor, ejecuta:
+{% highlight bash %}
+   node index.js
+{% endhighlight %}
+Visita http://localhost:3000 y deberías ver el mensaje "¡Bienvenido a la API!".
+<hr>
+
+## 2. Qué es una Ruta en Express
+
+Una ruta es una dirección URL específica que se define en nuestro servidor y está asociada con una acción o respuesta. En Express, las rutas son definidas mediante funciones que se ejecutan cuando se accede a ellas a través de ciertos métodos HTTP.
+
+Tipos de Rutas:
+- **GET:** Para obtener datos.
+- **POST:** Para enviar datos y crear nuevos recursos.
+- **PUT:** Para actualizar recursos existentes.
+- **DELETE:** Para eliminar recursos.
+
+### Ejemplo básico de rutas
+Supongamos que queremos manejar usuarios en nuestra API. Podemos definir dos rutas para listar y crear usuarios.
+
+- 1. Ruta GET para obtener la lista de usuarios:
+{% highlight javascript %}
+app.get('/api/users', (req, res) => {
+  res.json({ message: 'Aquí está la lista de usuarios' });
+});
+{% endhighlight %}
+
+- 2. Ruta POST para agregar un nuevo usuario:
+{% highlight javascript %}
+app.post('/api/users', (req, res) => {
+  const newUser = req.body;
+  res.status(201).json({ message: 'Usuario creado', user: newUser });
+});
+{% endhighlight %}
+
+En estos ejemplos:
+- GET /api/users devuelve un mensaje con la lista de usuarios.
+- POST /api/users toma los datos enviados en el cuerpo de la solicitud y los procesa (en este caso, simulando la creación de un usuario).
+
+  
+
