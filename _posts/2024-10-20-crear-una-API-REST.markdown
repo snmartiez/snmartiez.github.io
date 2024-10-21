@@ -84,26 +84,57 @@ Tipos de Rutas:
 - **DELETE:** Para eliminar recursos.
 
 ### Ejemplo básico de rutas
-Supongamos que queremos manejar usuarios en nuestra API. Podemos definir dos rutas para listar y crear usuarios.
+Supongamos que queremos manejar Item en nuestra API. Podemos definir el id y el nombre.
 
-- 1. Ruta GET para obtener la lista de usuarios:
 {% highlight javascript %}
-app.get('/api/users', (req, res) => {
-  res.json({ message: 'Aquí está la lista de usuarios' });
+let items = [
+  { id: 1, name: 'Item 1' },
+  { id: 2, name: 'Item 2' }
+];
+
+// Obtener todos los ítems
+app.get('/items', (req, res) => {
+  res.json(items);
 });
+
+// Obtener un ítem específico por ID
+app.get('/items/:id', (req, res) => {
+  const item = items.find(i => i.id === parseInt(req.params.id));
+  if (!item) return res.status(404).send('El ítem no fue encontrado.');
+  res.json(item);
+});
+
+// Crear un nuevo ítem
+app.post('/items', (req, res) => {
+  const newItem = {
+    id: items.length + 1,
+    name: req.body.name
+  };
+  items.push(newItem);
+  res.status(201).json(newItem);
+});
+
+// Actualizar un ítem existente
+app.put('/items/:id', (req, res) => {
+  const item = items.find(i => i.id === parseInt(req.params.id));
+  if (!item) return res.status(404).send('El ítem no fue encontrado.');
+
+  item.name = req.body.name;
+  res.json(item);
+});
+
+// Eliminar un ítem
+app.delete('/items/:id', (req, res) => {
+  const itemIndex = items.findIndex(i => i.id === parseInt(req.params.id));
+  if (itemIndex === -1) return res.status(404).send('El ítem no fue encontrado.');
+
+  const deletedItem = items.splice(itemIndex, 1);
+  res.json(deletedItem);
+});
+
 {% endhighlight %}
 
-- 2. Ruta POST para agregar un nuevo usuario:
-{% highlight javascript %}
-app.post('/api/users', (req, res) => {
-  const newUser = req.body;
-  res.status(201).json({ message: 'Usuario creado', user: newUser });
-});
-{% endhighlight %}
 
-En estos ejemplos:
-- GET /api/users devuelve un mensaje con la lista de usuarios.
-- POST /api/users toma los datos enviados en el cuerpo de la solicitud y los procesa (en este caso, simulando la creación de un usuario).
 
 ##  3. Controladores: Qué son y para qué se utilizan
 Los controladores son funciones que manejan la lógica detrás de cada ruta. Sirven para organizar el código y separar la lógica de la ruta propiamente dicha, haciendo que tu código sea más modular y fácil de mantener.
