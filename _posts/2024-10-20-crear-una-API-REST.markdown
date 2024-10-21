@@ -42,25 +42,30 @@ npm install express
 Crea un archivo llamado index.js en la raíz del proyecto. Aquí es donde configuraremos el servidor.
 
 {% highlight javascript %}
+// server.js
 const express = require('express');
 const app = express();
-
-// Definir la ruta principal
-app.get('/', (req, res) => {
-  res.send('¡Hola, Mundo! Este es mi servidor con Express.');
-});
-
-// Configurar el servidor en el puerto 3000
 const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
+
+// Middleware para parsear JSON
+app.use(express.json());
+
+// Ruta principal
+app.get('/', (req, res) => {
+  res.send('¡Hola, mundo!');
 });
+
+// Iniciar el servidor
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+});
+
 {% endhighlight %}
 
 ### Explicación:
-- **express():** Crea una nueva aplicación Express.
-- **app.use(express.json()):** Middleware que permite manejar solicitudes con cuerpos en formato JSON.
-- **app.get():** Define una ruta de tipo GET (más sobre tipos de rutas a continuación).
-- **app.listen():** Inicia el servidor y escucha en el puerto especificado.
+- express(): Crea una nueva aplicación Express.
+- app.use(express.json()): Middleware que permite manejar solicitudes con cuerpos en formato JSON.
+- app.get(): Define una ruta de tipo GET (más sobre tipos de rutas a continuación).
+- app.listen(): Inicia el servidor y escucha en el puerto especificado.
   
 Para iniciar el servidor, ejecuta:
