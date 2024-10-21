@@ -73,7 +73,8 @@ Para iniciar el servidor, ejecuta:
 Visita http://localhost:3000 y deberías ver el mensaje "¡Bienvenido a la API!".
 <hr>
 
-## 2. Qué es una Ruta en Express
+
+### 2. Qué es una Ruta en Express
 
 Una ruta es una dirección URL específica que se define en nuestro servidor y está asociada con una acción o respuesta. En Express, las rutas son definidas mediante funciones que se ejecutan cuando se accede a ellas a través de ciertos métodos HTTP.
 
@@ -136,7 +137,8 @@ app.delete('/items/:id', (req, res) => {
 
 
 
-##  3. Controladores: Qué son y para qué se utilizan
+
+###  3. Controladores: Qué son y para qué se utilizan
 Los controladores son funciones que manejan la lógica detrás de cada ruta. Sirven para organizar el código y separar la lógica de la ruta propiamente dicha, haciendo que tu código sea más modular y fácil de mantener.
 
 ### Por qué usar controladores:
