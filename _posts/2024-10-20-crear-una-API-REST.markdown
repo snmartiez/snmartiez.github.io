@@ -8,7 +8,8 @@ date: 2024-10-21
 
 ### Introducción
 
-**Express** es un framework minimalista para **Node.js** que facilita la creación de aplicaciones web y APIs REST. En esta guía, aprenderás cómo crear una API REST desde cero utilizando Express, con una estructura de carpetas organizada para proyectos de mayor escala.
+**Express** es un framework minimalista para **Node.js** que facilita la creación de aplicaciones web y APIs REST. 
+En esta guía, aprenderás cómo crear una API REST desde cero utilizando Express, con una estructura de carpetas organizada para proyectos de mayor escala.
 
 ### Requisitos previos
 
@@ -20,16 +21,15 @@ Puedes descargar [Node.js](https://nodejs.org) desde su sitio oficial.
 
 Lo primero que necesitamos es instalar Express y configurar el servidor. Sigue estos pasos:
 
-Paso 1: Inicializa un proyecto Node.js
+#### **Paso 1: Inicializa un proyecto Node.js**
 En tu terminal, ejecuta los siguientes comandos para crear un nuevo proyecto:
-
+-  Creamos un directorio o carpeta
+-  Accedemos al directorio
+-  Esto generará un archivo package.json con la configuración básica del proyecto.
 {% highlight bash %}
-// Creamos un directorio o carpeta
    mkdir api-rest
-// Accedemos al directorio
-  cd api-rest
-// Esto generará un archivo package.json con la configuración básica del proyecto.
-  npm init -y
+   cd api-rest
+   npm init -y
 {% endhighlight %}
 
 ### Paso 2: Instala Express
