@@ -79,6 +79,7 @@ node app.js
 
 Verás un mensaje que indica que el servidor está ejecutándose: Servidor ejecutándose en http://localhost:3000
 
+<hr>
 ### Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WYy0EX0Is3A?si=Az8E91n1NQjWG7eS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
