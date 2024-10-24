@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Crear una API REST"
+title: "Express - Rutas"
 date: 2024-10-21
 ---
 
@@ -136,17 +136,13 @@ app.delete('/items/:id', (req, res) => {
 {% endhighlight %}
 
 
+<hr>
 
+###  Videos 
 
-###  3. Controladores: Qué son y para qué se utilizan
-Los controladores son funciones que manejan la lógica detrás de cada ruta. Sirven para organizar el código y separar la lógica de la ruta propiamente dicha, haciendo que tu código sea más modular y fácil de mantener.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yVi_nyjzhGw?si=SSBh8uAlftMKW1BR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### Por qué usar controladores:
-- **Modularidad:** Los controladores permiten mover la lógica de negocio fuera de las rutas, manteniendo las rutas limpias y centradas en la configuración de las URLs.
-- **Reutilización:** Si necesitas usar la misma lógica en varias rutas, puedes reutilizar el controlador sin repetir código.
-
-### Ejemplo de un controlador
-En lugar de tener la lógica directamente dentro de las rutas, podemos moverla a funciones en un archivo separado. Crea una carpeta controllers y un archivo userController.js:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hn-Wx8c86FA?si=PNjbT3CNHzWumZkH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   
 
