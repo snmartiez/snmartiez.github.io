@@ -12,7 +12,7 @@ En este tutorial, aprenderemos a crear un servidor web básico con **Express**, 
 
 Asegúrate de tener instalado lo siguiente en tu sistema:
 
-- **Node.js** (versión 18 o superior). Puedes descargarlo desde [nodejs.org](https://nodejs.org).
+- **Node.js** Puedes descargarlo desde [nodejs.org](https://nodejs.org).
 - **NPM** (viene con Node.js).
 
 Verifica si tienes ambos instalados ejecutando en la terminal:
@@ -51,7 +51,7 @@ Esto añadirá **Express** al archivo `package.json`.
 
 ### 4. Crear un servidor con Express
 
-Ahora, crea un archivo llamado `app.js` en la carpeta de tu proyecto y añade el siguiente código para configurar un servidor básico:
+Ahora, crea un archivo llamado `index.js` en la carpeta de tu proyecto y añade el siguiente código para configurar un servidor básico:
 
 {% highlight javascript %}
 const express = require('express');
@@ -74,7 +74,7 @@ app.listen(PORT, () => {
 Para ejecutar tu servidor, ve a la terminal y usa el siguiente comando:
 
 {% highlight bash %}
-node app.js
+node index.js
 {% endhighlight %}
 
 Verás un mensaje que indica que el servidor está ejecutándose: Servidor ejecutándose en http://localhost:3000
