@@ -14,7 +14,9 @@ Modularizar es un enfoque en el desarrollo de software que consiste en dividir u
 - Reutilización de código: al crear módulos independientes, estos pueden ser reutilizados en distintas partes de la aplicación o incluso en otros proyectos.
 - Facilidad de mantenimiento y pruebas: al estar separado, cada módulo se puede mantener, probar y depurar de manera independiente, lo que acelera la identificación y corrección de errores.
 - Escalabilidad: al añadir nuevas funciones o características, la modularización permite agregar módulos sin afectar otras partes de la aplicación.
+  
 **Ejemplo práctico**
+
 En una aplicación web, podríamos modularizar la funcionalidad en tres componentes principales:
 
 - **Controladores:** manejan la lógica de negocio.
